@@ -1,32 +1,29 @@
-PORTA SERIAL DO COMPUTADOR SETADA PARA BAUD 38400!!!!!  ATIVAR CR E NEWLINE!!! IMPORTANTE!
+##Description
+Very simple program to config HC-05 bluetooth modules using an arduino serial
 
-
-
-
-Desenvolvido por Italo Soares - 24/12/2014
+##How to use
+1 - Set the ARDUINO IDE to BAUD 38400, activate CR/NL
+2 - change the name/password in the .ino file
+3 - Burn the code into arduino
+4 - connect BT RX to arduino pin D10, connect BT TX to arduino D11
  
- CONECTAR O PINO RX DO BLUETOOTH NO PINO 10 DO ARDUINO, E O PINO TX, NO PINO 11!!!
- CONECTAR O PINO EN DO BLUETOOTH NO PINO 9 DO ARDUINO (caso o modulo n„o tenha bot„o para entrar no modo AT)
+##Other useful AT commands:
  
- MODIFIQUE PARA SUAS CONFIGURA«OES NO BLOCO DE STRINGS!!!!
- 
- 
- COMANDOS PADROES AT:
- LEITURA 
- AT : Checa a conex„o, retorna OK
+ To read 
+ AT : Checa a conex√£o, retorna OK
  AT+NAME : Mostra o nome atual
- AT+ADDR : Mostra o endereÁo atual
- AT+VERSION : Mostra a vers„o
+ AT+ADDR : Mostra o endere√ßo atual
+ AT+VERSION : Mostra a vers√£o
  AT+UART : Mostra a velocidade (BaudRate)
  AT+ROLE: Apenas para modulo MASTER - Seta modo master ou slave
  AT+RESET : Reinicia o modulo
- AT+ORGL : ConfiguraÁ„o de fabrica
+ AT+ORGL : Configura√ß√£o de fabrica
  AT+PSWD: Mostra a senha atual
  
  
- ESCRITA
+ To write
  AT+NAME=<NOVO_NOME>
- AT+ADDR=<NOVOENDERE«O>
+ AT+ADDR=<NOVOENDERE√áO>
  AT+PSWD=<SENHA>
  AT+UART=<VELOCIDADE,STOP,PARITY>
  stop bit: 0----1 bit / 1----2 bits
