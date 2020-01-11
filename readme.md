@@ -1,13 +1,13 @@
-##Description
+# Description
 Very simple program to config HC-05 bluetooth modules using an arduino serial
 
-##How to use
+# How to use
 1 - Set the ARDUINO IDE to BAUD 38400, activate CR/NL
 2 - change the name/password in the .ino file
 3 - Burn the code into arduino
 4 - connect BT RX to arduino pin D10, connect BT TX to arduino D11
  
-##Other useful AT commands:
+# Other useful AT commands:
  
  To read 
  AT : Checa a conexão, retorna OK
